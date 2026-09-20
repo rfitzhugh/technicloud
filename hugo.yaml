@@ -1,0 +1,28 @@
+baseURL: "https://technicloud.com/"
+languageCode: "en-us"
+title: "Technicloud"
+theme: ""
+
+params:
+  description: "Platform engineering and software delivery consulting for modern engineering organizations."
+  formspreeEndpoint: "https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Services"
+      url: "/services/"
+      weight: 2
+    - name: "About"
+      url: "/about/"
+      weight: 3
+    - name: "Contact"
+      url: "/contact/"
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
