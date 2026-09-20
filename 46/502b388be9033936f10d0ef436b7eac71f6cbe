@@ -1,0 +1,19 @@
+layouts/partials/nav.html
+  s_753487b88ce2f0::t_475be5a6f7a5a2 16,25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "46502b388be9033936f10d0ef436b7eac71f6cbe",
+  "prompts": {},
+  "sessions": {
+    "s_753487b88ce2f0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "200faa61-2615-4703-a9fc-fa6c9ae71ff1",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
