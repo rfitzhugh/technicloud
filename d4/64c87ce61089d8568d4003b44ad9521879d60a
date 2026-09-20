@@ -1,0 +1,19 @@
+hugo.yaml
+  s_753487b88ce2f0::t_fd6d6018b28449 38-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d464c87ce61089d8568d4003b44ad9521879d60a",
+  "prompts": {},
+  "sessions": {
+    "s_753487b88ce2f0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "200faa61-2615-4703-a9fc-fa6c9ae71ff1",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
