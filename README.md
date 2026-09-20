@@ -1,6 +1,12 @@
 # technicloud
 
-Technicloud's public site — consulting services, about, and contact pages — built with [Hugo](https://gohugo.io) and deployed to GitHub Pages.
+Technicloud's public site — consulting services, about, and contact pages — built with [Hugo](https://gohugo.io), the [Forty](https://github.com/MarcusVirg/forty) theme (a Hugo port of [HTML5 UP Forty](https://html5up.net/forty)), and deployed to GitHub Pages.
+
+The visual theme is [Forty](https://github.com/MarcusVirg/forty), a Hugo port of [HTML5 UP Forty](https://html5up.net/forty), vendored as `themes/forty`. After cloning, initialize the submodule:
+
+```sh
+git submodule update --init --recursive
+```
 
 ## Local development
 

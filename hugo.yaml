@@ -1,11 +1,94 @@
 baseURL: "https://technicloud.com/"
-languageCode: "en-us"
 title: "Technicloud"
-theme: ""
+theme: "forty"
+defaultContentLanguage: "en"
+
+languages:
+  en:
+    label: "English"
+    locale: "en-US"
+    weight: 1
 
 params:
+  name: "Technicloud"
   description: "Platform engineering and software delivery consulting for modern engineering organizations."
   formspreeEndpoint: "https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
+  custom_css: []
+  custom_js: []
+
+  error404:
+    heading: "Page couldn't be found"
+    text: "Please visit [this page](/)"
+
+  navigation:
+    title: "Technicloud"
+    subtitle: "Consulting"
+    menu: "Menu"
+    links:
+      - name: "Home"
+        url: ""
+      - name: "Services"
+        url: "services/"
+      - name: "About"
+        url: "about/"
+      - name: "Contact"
+        url: "contact/"
+    button1:
+      - name: "Contact Us"
+        url: "contact/"
+
+  banner:
+    title: "This is Technicloud"
+    subtitle: "Platform engineering and software delivery consulting for modern engineering organizations."
+    buttonText: "See what we offer"
+
+  tiles:
+    enable: true
+    showcase:
+      - title: "Platform Engineering"
+        subtitle: "Strategy, architecture, and golden paths"
+        image: "pic01.jpg"
+        url: "services/#platform-engineering-strategy"
+      - title: "Cloud-Native Architecture"
+        subtitle: "Scalable, resilient systems"
+        image: "pic02.jpg"
+        url: "services/#cloud-native-architecture"
+      - title: "Developer Productivity"
+        subtitle: "Delivery flow and effectiveness"
+        image: "pic03.jpg"
+        url: "services/#developer-productivity-and-engineering-effectiveness"
+      - title: "Developer Tooling"
+        subtitle: "CI/CD, automation, and self-service"
+        image: "pic04.jpg"
+        url: "services/#developer-tooling-and-automation"
+      - title: "API Platforms"
+        subtitle: "Ecosystems and developer experience"
+        image: "pic05.jpg"
+        url: "services/#api-platforms-and-ecosystem-engineering"
+      - title: "AI-Native Engineering"
+        subtitle: "Adoption with measurable impact"
+        image: "pic06.jpg"
+        url: "services/#ai-native-engineering-enablement"
+
+  two:
+    enable: true
+    title: "Ready to improve how your teams build software?"
+    subtitle: "Technicloud helps engineering organizations move from fragmented tools, unclear signals, and inconsistent delivery practices to platforms and operating models that scale."
+    buttonText: "Contact Us"
+    url: "contact/"
+
+  contact:
+    enable: true
+    buttonSend: "Send message"
+    buttonClear: "Clear"
+
+  footer:
+    enable: true
+    copyright: "Technicloud"
+    quicklinks:
+      - text: "Design: "
+        url: "https://html5up.net"
+        alt: "HTML5 UP"
 
 menu:
   main:

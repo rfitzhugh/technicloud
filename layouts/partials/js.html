@@ -1,0 +1,11 @@
+{{ "<!-- Scripts -->" | safeHTML }}
+    <script src="{{ "js/jquery.min.js" | relURL }}"></script>
+    <script src="{{ "js/jquery.scrolly.min.js" | relURL }}"></script>
+    <script src="{{ "js/jquery.scrollex.min.js" | relURL }}"></script>
+    <script src="{{ "js/skel.min.js" | relURL }}"></script>
+    <script src="{{ "js/util.js" | relURL }}"></script>
+    <script src="{{ "js/main.js" | relURL }}"></script>
+
+    {{ range .Site.Params.custom_js }}
+        <script src="{{ . | relURL }}"></script>
+    {{ end }}

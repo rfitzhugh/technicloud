@@ -4,27 +4,16 @@
 	<body>
 		<div id="wrapper">
 			{{ partial "nav.html" . }}
-			{{ partial "banner.html" . }}
-
 			<div id="main">
-				{{ if .Site.Params.Tiles.enable }}
-					{{ partial "tile.html" . }}
-				{{ end }}
-
-				{{ if .Site.Params.Two.enable }}
-					{{ partial "two.html" . }}
-				{{ end }}
+				<div class="inner">
+					<h1>{{ .Site.Params.Error404.heading }}</h1>
+					<p>{{ .Site.Params.Error404.text | markdownify }}</p>
+				</div>
 			</div>
-
-			{{ if .Site.Params.Contact.enable }}
-				{{ partial "contact.html" . }}
-			{{ end }}
-
 			{{ if .Site.Params.Footer.enable }}
 				{{ partial "footer.html" . }}
 			{{ end }}
 		</div>
-
 		{{ partial "js.html" . }}
 	</body>
 </html>
