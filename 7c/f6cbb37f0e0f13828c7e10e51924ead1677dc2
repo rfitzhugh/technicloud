@@ -1,0 +1,56 @@
+layouts/_default/about.html
+  s_1b3bc70908453b::t_88b622109a733a 84,86-89,91
+  s_1b3bc70908453b::t_d414ab56b98d17 1-7,9-83,85,90,92-119
+  s_1b3bc70908453b::t_06416146d2fd60 8
+content/services.md
+  s_031ba6ef627b88::t_8c302b0ac3e1ee 3-4,6-8,10-20,22-32,34-44,46-56,58-68,70-80,82-90
+  s_031ba6ef627b88::t_b60d493f6f5675 5,9,21,33,45,57,69,81,95
+hugo.yaml
+  s_031ba6ef627b88::t_78f838752e722a 16-19
+layouts/partials/header.html
+  s_031ba6ef627b88::t_34a22338a318e1 1-29
+static/css/custom.css
+  s_031ba6ef627b88::t_e1b6af385cf0dd 110
+  s_1b3bc70908453b::t_9400b9f0d8a1c2 154-157,161-164,172-175,179-182,188-213
+  s_031ba6ef627b88::t_79a2f060382d06 1
+  s_1b3bc70908453b::t_c736209ad11f17 242
+  s_031ba6ef627b88::t_0f250222f5fccc 2-109
+  s_1b3bc70908453b::t_21a63cbb5ff165 120-122
+  s_1b3bc70908453b::t_5f2504e0315030 132
+  s_1b3bc70908453b::t_1e2678c583241e 111-119,123-131,133-153,158-160,165-171,176-178,183-187,214-241,245-249,262-263
+  s_031ba6ef627b88::t_d8a51de90e919c 243-244,250-261
+content/about.md
+  s_1b3bc70908453b::t_287b37959d2971 3-4,6-38
+  s_1b3bc70908453b::t_abb046dfcbd3c1 5
+static/js/spotlights.js
+  s_031ba6ef627b88::t_941c234283e5f3 1-18
+layouts/_default/services.html
+  s_031ba6ef627b88::t_3cf290703c0fd4 1-7,9-20,22-26,58,64-89
+  s_031ba6ef627b88::t_ae7236fc9f62dc 8,21,27-57,59-63
+layouts/partials/nav.html
+  s_1b3bc70908453b::t_ee693c332f7842 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7cf6cbb37f0e0f13828c7e10e51924ead1677dc2",
+  "prompts": {},
+  "sessions": {
+    "s_031ba6ef627b88": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "aa7fad8a-99b9-4484-8ded-61bbb5508a52",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    },
+    "s_1b3bc70908453b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "f0924b6d-1f20-4c7a-91ee-a06ba0fe10a2",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
