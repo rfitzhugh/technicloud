@@ -1,0 +1,49 @@
+layouts/partials/nav.html
+  s_753487b88ce2f0::t_233c61d2cdfbb8 1-24
+layouts/_default/contact.html
+  s_753487b88ce2f0::t_0318a8d58ca164 1,3-6,8-17,19-21,23-26,28-30
+  s_753487b88ce2f0::t_4b47a41a05d2da 2
+README.md
+  s_753487b88ce2f0::t_8b43278bf0c51b 3
+  s_753487b88ce2f0::t_2ae0fdefbcbfbf 5-9
+  s_753487b88ce2f0::t_8ac69602a18e79 4
+layouts/partials/contact.html
+  s_753487b88ce2f0::t_2acf7600b6fc3a 1-70
+layouts/partials/tile.html
+  s_753487b88ce2f0::t_572b2af224f7f9 1-14
+.gitmodules
+  s_753487b88ce2f0::t_05d032174ef678 1-3
+layouts/partials/js.html
+  s_753487b88ce2f0::t_cc161845f2c40f 1-11
+layouts/index.html
+  s_753487b88ce2f0::t_6971d996da1d98 1-30
+.github/workflows/hugo.yaml
+  s_753487b88ce2f0::t_f78f0be67588c3 25
+layouts/_default/single.html
+  s_753487b88ce2f0::t_a38510767bff3c 2
+  s_753487b88ce2f0::t_b0e0813b05df2c 1,3-29
+layouts/404.html
+  s_753487b88ce2f0::t_a63a656ecfe04f 1-18
+hugo.yaml
+  s_753487b88ce2f0::t_22cc592a2e7b46 8
+  s_753487b88ce2f0::t_1b6fc697d07019 4-7,9-10
+  s_753487b88ce2f0::t_15e44cdf835af3 3,13,16-91
+themes/forty
+  s_753487b88ce2f0::t_e39db22f589e55 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d55c324dd0680aa22bf3bf9876cb8a2ccbf2c39b",
+  "prompts": {},
+  "sessions": {
+    "s_753487b88ce2f0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "200faa61-2615-4703-a9fc-fa6c9ae71ff1",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
