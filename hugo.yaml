@@ -35,8 +35,8 @@ params:
         url: "contact/"
 
   banner:
-    title: "This is Technicloud"
-    subtitle: "Platform engineering and software delivery consulting for modern engineering organizations."
+    title: "Engineering the future"
+    subtitle: "Technicloud accelerates AI native engineering strategy into execution, integrated solutions, and measurable improvement."
     buttonText: "See what we offer"
 
   tiles:
