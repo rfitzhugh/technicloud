@@ -13,8 +13,10 @@ params:
   name: "Technicloud"
   description: "Platform engineering and software delivery consulting for modern engineering organizations."
   formspreeEndpoint: "https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
-  custom_css: []
-  custom_js: []
+  custom_css:
+    - "css/custom.css"
+  custom_js:
+    - "js/spotlights.js"
 
   error404:
     heading: "Page couldn't be found"

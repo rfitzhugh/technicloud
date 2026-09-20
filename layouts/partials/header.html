@@ -1,0 +1,29 @@
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+	{{ hugo.Generator }}
+	<title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
+	<!--[if lte IE 8]><script src="{{ "js/ie/html5shiv.js" | relURL }}"></script><![endif]-->
+	<link rel="stylesheet" href="{{ "css/main.css" | relURL }}"/>
+	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "css/ie9.css" | relURL }}"/><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "css/ie8.css" | relURL }}"/><![endif]-->
+
+	{{ range .Site.Params.custom_css }}
+		<link rel="stylesheet" href="{{ . | relURL }}">
+	{{ end }}
+
+	<link href="{{ "css/font-awesome.min.css" | relURL }}" rel="stylesheet" type="text/css">
+
+	{{ with .Site.Params.favicon }}
+	<link rel="shortcut icon" type="image/x-icon" href="{{ . | relURL }}">
+	<link rel="icon" type="image/x-icon" href="{{ . | relURL }}">
+	{{ end }}
+
+	<!--[if lt IE 9]>
+	<script src="{{ "js/ie/html5shiv.js" | relURL }}"></script>
+	<script src="{{ "js/ie/respond.min.js" | relURL }}"></script>
+	<![endif]-->
+</head>

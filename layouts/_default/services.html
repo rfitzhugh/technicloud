@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="{{ with .Site.Language.Locale }}{{ . }}{{ else }}en-US{{ end }}">
+    {{ partial "header.html" . }}
+    <body>
+        <div id="wrapper">
+            {{ partial "nav.html" . }}
+
+            <section id="banner">
+                <div class="inner">
+                    <span class="image">
+                        <img src="{{ printf "img/%s" (.Params.image | default "banner.jpg") | relURL }}" alt="" />
+                    </span>
+                    <header class="major">
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                </div>
+            </section>
+
+            <div id="main">
+                <section id="one">
+                    <div class="inner services-intro">
+                        {{ .Content }}
+                    </div>
+                </section>
+
+                {{ with .Params.offerings }}
+                <section id="offerings-index">
+                    <div class="inner">
+                        <ol class="services-index">
+                            {{ range $index, $item := . }}
+                            <li>
+                                <a href="#{{ $item.id }}">
+                                    <span class="services-index-num">{{ printf "%02d" (add $index 1) }}</span>
+                                    <span class="services-index-meta">
+                                        <strong>{{ $item.title }}</strong>
+                                        {{ with $item.tagline }}<span>{{ . }}</span>{{ end }}
+                                    </span>
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="offerings">
+                    <div class="inner">
+                        {{ range $index, $item := . }}
+                        <article class="service" id="{{ $item.id }}">
+                            <header>
+                                <span class="service-num">{{ printf "%02d" (add $index 1) }}</span>
+                                <h2>{{ $item.title }}</h2>
+                            </header>
+                            <p>{{ $item.summary }}</p>
+                            {{ with $item.items }}
+                            <ul class="service-items">
+                                {{ range . }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                            {{ end }}
+                        </article>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{ if .Site.Params.Two.enable }}
+                <section id="three">
+                    <div class="inner">
+                        <header class="major">
+                            <h2>{{ .Site.Params.Two.title }}</h2>
+                        </header>
+                        <p>{{ .Site.Params.Two.subtitle }}</p>
+                        <ul class="actions">
+                            <li><a href="{{ .Site.Params.Two.url | relURL }}" class="button next">{{ .Site.Params.Two.buttonText }}</a></li>
+                        </ul>
+                    </div>
+                </section>
+                {{ end }}
+            </div>
+
+            {{ if .Site.Params.footer.enable }}
+                {{ partial "footer.html" . }}
+            {{ end }}
+        </div>
+
+        {{ partial "js.html" . }}
+    </body>
+</html>

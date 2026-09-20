@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="{{ with .Site.Language.Locale }}{{ . }}{{ else }}en-US{{ end }}">
+    {{ partial "header.html" . }}
+    <body>
+        <div id="wrapper">
+            {{ partial "nav.html" . }}
+
+            <section id="banner">
+                <div class="inner">
+                    <span class="image">
+                        <img src="{{ printf "img/%s" (.Params.image | default "banner.jpg") | relURL }}" alt="" />
+                    </span>
+                    <header class="major">
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                    {{ with .Description }}
+                    <div class="content">
+                        <p>{{ . }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </section>
+
+            <div id="main">
+                <section id="one">
+                    <div class="inner">
+                        {{ .Content }}
+                        <ul class="actions">
+                            <li><a href="{{ "services/" | relURL }}" class="button next">See our services</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                {{ with .Params.approach }}
+                <section id="approach">
+                    <div class="inner">
+                        <header class="major">
+                            <h2>Our approach</h2>
+                        </header>
+                        <div class="about-grid">
+                            {{ range $index, $item := . }}
+                            <article class="about-card">
+                                <span class="about-card-index">0{{ add $index 1 }}</span>
+                                <span class="icon {{ $item.icon }}" aria-hidden="true"></span>
+                                <h3>{{ $item.title }}</h3>
+                                <p>{{ $item.text }}</p>
+                            </article>
+                            {{ end }}
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+
+                {{ with .Params.audience }}
+                <section id="audience">
+                    <div class="inner">
+                        <header class="major">
+                            <h2>Who we help</h2>
+                        </header>
+                        {{ with .intro }}
+                        <p>{{ . }}</p>
+                        {{ end }}
+                        {{ with .items }}
+                        <ul class="about-fit-list">
+                            {{ range . }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{ with .Params.why }}
+                <section id="why">
+                    <div class="inner">
+                        <header class="major">
+                            <h2>Why Technicloud</h2>
+                        </header>
+                        {{ with .intro }}
+                        <p>{{ . }}</p>
+                        {{ end }}
+                        {{ with .items }}
+                        <div class="about-why-grid">
+                            {{ range . }}
+                            <article class="about-why-item">
+                                <span class="icon fa-check" aria-hidden="true"></span>
+                                <p>{{ . }}</p>
+                            </article>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+
+                {{ if .Site.Params.Two.enable }}
+                <section id="three">
+                    <div class="inner">
+                        <header class="major">
+                            <h2>{{ .Site.Params.Two.title }}</h2>
+                        </header>
+                        <p>{{ .Site.Params.Two.subtitle }}</p>
+                        <ul class="actions">
+                            <li><a href="{{ .Site.Params.Two.url | relURL }}" class="button next">{{ .Site.Params.Two.buttonText }}</a></li>
+                        </ul>
+                    </div>
+                </section>
+                {{ end }}
+            </div>
+
+            {{ if .Site.Params.footer.enable }}
+                {{ partial "footer.html" . }}
+            {{ end }}
+        </div>
+
+        {{ partial "js.html" . }}
+    </body>
+</html>
