@@ -13,6 +13,7 @@
                 <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
             {{ end }}
         </ul>
+        {{ if or .Site.Params.Navigation.button1 .Site.Params.Navigation.button2 }}
         <ul class="actions vertical">
             {{ range .Site.Params.Navigation.button1 }}
                 <li><a href="{{ .url | relURL }}" class="button special fit">{{ .name }}</a></li>
@@ -21,4 +22,5 @@
                 <li><a href="{{ .url | relURL }}" class="button fit">{{ .name }}</a></li>
             {{ end }}
         </ul>
+        {{ end }}
     </nav>

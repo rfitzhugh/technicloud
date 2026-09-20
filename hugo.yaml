@@ -33,9 +33,6 @@ params:
         url: "about/"
       - name: "Contact"
         url: "contact/"
-    button1:
-      - name: "Contact Us"
-        url: "contact/"
 
   banner:
     title: "This is Technicloud"
