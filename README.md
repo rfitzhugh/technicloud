@@ -16,9 +16,9 @@ hugo server -D
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/hugo.yaml`, which builds the site with Hugo and publishes it to GitHub Pages.
+`.github/workflows/hugo.yaml` builds the site with Hugo 0.166.0 (extended). Pull requests run a build check. Pushes to `main` (and manual **Actions → Deploy Hugo site to Pages → Run workflow**) publish to GitHub Pages.
 
-The custom domain (technicloud.com) is set via `static/CNAME`. In the repo's **Settings → Pages**, the source must be set to **GitHub Actions**, and DNS must point technicloud.com at GitHub Pages (see setup notes from migration).
+The custom domain (technicloud.com) is set via `static/CNAME`. In the repo's **Settings → Pages**, the source must be **GitHub Actions**, and DNS must point technicloud.com at GitHub Pages.
 
 ## Contact form
 
