@@ -1,0 +1,23 @@
+layouts/partials/nav.html
+  s_40d4f130aa5213::t_ea7ce4ba0ec076 5-11,20-22
+static/css/custom.css
+  s_40d4f130aa5213::t_680d528b6ea634 283
+  s_40d4f130aa5213::t_6bd9d5a3929875 292
+  s_40d4f130aa5213::t_d4547b34613348 240-274,276-282,284-291,293-333
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "1bb58d3840f7e69e41f87c305221f8b029b6aec0",
+  "prompts": {},
+  "sessions": {
+    "s_40d4f130aa5213": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "c3a61846-13a3-443d-a32c-b149dac6c1be",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
