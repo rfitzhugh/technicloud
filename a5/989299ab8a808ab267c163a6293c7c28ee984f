@@ -1,0 +1,19 @@
+DEBT.md
+  s_a4ec57e56b9083::t_1550562ac3c807 1-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a5989299ab8a808ab267c163a6293c7c28ee984f",
+  "prompts": {},
+  "sessions": {
+    "s_a4ec57e56b9083": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "0cb092b1-734e-4b81-b945-6bae7af17267",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
