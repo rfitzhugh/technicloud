@@ -1,0 +1,21 @@
+README.md
+  s_422dadfc6c592a::t_888bf8c50608e5 19,21
+.github/workflows/hugo.yaml
+  s_422dadfc6c592a::t_37e432ae9520ee 6-7,16,30,34,37-47,49-50,52,54,56-57,59-60,65,74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "0342e1ff3327a3080b50e4deb1565d3f773bf856",
+  "prompts": {},
+  "sessions": {
+    "s_422dadfc6c592a": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "547c6aba-5a4e-4303-a4ef-4a8dc8d4d688",
+        "model": "grok-4.6"
+      },
+      "human_author": "Rebecca Fitzhugh <rmfitzhugh@gmail.com>"
+    }
+  }
+}
